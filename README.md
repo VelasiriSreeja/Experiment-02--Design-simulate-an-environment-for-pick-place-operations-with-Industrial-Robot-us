@@ -48,17 +48,6 @@ Double click the robot to show the robot panel Select Paint gun as the Tool Fram
 Rename the first target as Home by pressing F2. Alternatively, select ToolsRename item. Move the robot closer to one edge of the part (by dragging the tool using the Alt key, entering coordinates or jogging the axis manually) In this example we used the following robot joint coordinates [0,0,200,180,0,180] deg. Select Program Teach Target (Ctrl+T) or the appropriate button in the toolbar to create a new target Rename the target to Approach as shown in step 7 Select the Home target and the Approach target alternatively to see the robot moving between the two targets Right click the target and select Teach Current Position (Alt+double click) if a different position needs to be recorded for one of the targets Right click the target and select Target Options… (F3) to open the target options window shown in the next image
 
 ### PROGRAM 
-PICKANDPLACE()
-
-# RoboDK Python Intermediate file to generate robot programs.
-# Program name: PICKANDPLACE
-# This file requires the post processor: 
-#   Doosan_Robotics
-# to generate your robot program.
-# This is a temporary file and you can delete it once you have generated your program.
-# 
-# Post processor documentation: https://robodk.com/doc/en/PythonAPI/postprocessor.html
-
 import sys
 import os
 sys.path.append(os.path.abspath(r"""D:\RoboDK\Posts""")) # temporarily add path to POSTS folder
