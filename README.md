@@ -47,7 +47,8 @@ Double click the robot to show the robot panel Select Paint gun as the Tool Fram
 
 Rename the first target as Home by pressing F2. Alternatively, select ToolsRename item. Move the robot closer to one edge of the part (by dragging the tool using the Alt key, entering coordinates or jogging the axis manually) In this example we used the following robot joint coordinates [0,0,200,180,0,180] deg. Select Program Teach Target (Ctrl+T) or the appropriate button in the toolbar to create a new target Rename the target to Approach as shown in step 7 Select the Home target and the Approach target alternatively to see the robot moving between the two targets Right click the target and select Teach Current Position (Alt+double click) if a different position needs to be recorded for one of the targets Right click the target and select Target Options… (F3) to open the target options window shown in the next image
 
- PROGRAM 
+ #PROGRAM 
+ ```
  PICK AND PLACE()
 # RoboDK Python Intermediate file to generate robot programs.
 # Program name: PICKANDPLACE
@@ -88,7 +89,7 @@ r.MoveJ(p(30.2054,-430.862,51.997,-179.861,3.3803,-179.992),[27.0464,-17.1299,-1
 r.RunMessage(r"""Detach from Gripper RobotiQ 85 Opened""",True)
 r.ProgFinish(r"""PICKANDPLACE""")
 r.ProgSave(r"""C:/Users/VelasiriSreeja/OneDrive/Documents/RoboDK""",r"""PICKANDPLACE""",True,r"""C:/Users/VelasiriSreeja/Downloads/apps/RoboDK/Other/VSCodium/VSCodium.exe""")
- 
+ ```
  #SIMULATION
  ![Screenshot (223)](https://github.com/VelasiriSreeja/Experiment-02--Design-simulate-an-environment-for-pick-place-operations-with-Industrial-Robot-us/assets/118344328/e22f5ef5-cd5d-4f8e-a96d-730370762c49)
 
